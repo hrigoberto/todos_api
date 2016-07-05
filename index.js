@@ -16,12 +16,16 @@ server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({extended: true}));
 
 server.get('/todos', function(request, response){
-  var todos = db.read('db.json');
+  var todos = db.read('todos')
+                .value();
   response.send(todos);
 })
 
 server.get('/todos/:id', function(request, response){
-  response.send("GET todos :id");
+  var todo = db.get('todos')
+               .find({id: request.params.id})
+               .value()
+      response.send(todo);
 })
 
 server.post('/todos', function(request, response){
