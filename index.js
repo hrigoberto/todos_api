@@ -4,6 +4,9 @@ var bodyParser = require('body-parser');
 var lowdb = require('lowdb');
 var uuid = require('uuid');
 
+var Todo = require('./models/Todo.js')
+var testTodo = new Todo('some stuff');
+console.log(testTodo);
 var port = process.env.PORT || 8080
 var db = lowdb('db.json');
 
