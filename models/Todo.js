@@ -8,6 +8,15 @@ function Todo(description){
   this.isComplete = false;
 }
 
+Todo.prototype.updateComplete = function(value){
+  if(value.toLowerCase() === 'true'){
+    this.isComplete = true;
+  } else {
+    this.isComplete = false;
+  }
+  this.isComplete = value;
+};
+
 // var todo1 = new Todo('read you dont know js');
 // var todo2 = new Todo('practice programming');
 // var todo3 = new Todo('go running');
