@@ -1,15 +1,14 @@
 {
   "todos": [
     {
-      "id": "1a09ec50-eaa5-4da0-9fa0-97dd762b5b5b",
-      "description": "bleeblobloop",
-      "isComplete": "false"
+      "id": "2c5cda60-9495-42ae-af99-6a11deb1c776",
+      "description": "take out the trash",
+      "isComplete": false
     },
     {
-      "id": "ffa2b79b-ff6d-44da-b18b-face4a5942c9",
+      "id": "5efd3a48-1d6c-47a2-abb9-20542192e709",
       "description": "take out the trash",
-      "isComplete": "fasd",
-      "isComeplete": false
+      "isComplete": false
     }
   ]
 }
